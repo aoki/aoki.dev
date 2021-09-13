@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+  margin: 0;
+  transition: 0.5s;
+}
+
+#__next {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+}
+
+:root {
+  --accent-color: #c12739;
+  --white-color: #eee;
+  --black-color: #252525;
+}
+
+@font-face {
+  font-family: "04b_03";
+  src: url("../public/fonts/04b_03.ttf.woff") format("woff"),
+    url("../public/fonts/04b_03.ttf.svg#04b_03") format("svg"),
+    url("../public/fonts/04b_03.ttf.eot"),
+    url("../public/fonts/04b_03.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body.light-mode {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  font-family: "04b_03";
+  color: var(--accent-color);
+}
